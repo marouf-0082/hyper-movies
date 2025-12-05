@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+@layer utilities{
+  .container {
+    padding: 0 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media sm {
+    .container {
+      padding: 0 2rem;
+    }
+  }
+
+  @media lg {
+    .container {
+      padding: 0 4rem;
+    }
+  }
+
+  @media xl {
+    .container {
+      padding: 0 5rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      padding: 0 6rem;
+    }
+  }
+}
+
+@layer components {
+  .navLink {
+    @apply relative transition-all duration-350 ease-in-out z-10;
+  }
+
+  .navLink::before {
+    content: '';
+    @apply absolute left-0 -bottom-1 w-0 h-0.5 rounded bg-rose-500 transition-all duration-350 ease-in-out z-[-1];
+  }
+
+  .navLink:hover::before {
+    @apply w-full;
+  }
+
+  .navLink:hover {
+    @apply text-rose-500;
+  }
+
+  .navLink:focus {
+    @apply text-rose-500;
+  }
+}
