@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header
-      className="py-12 bg-cover bg-center"
+      className="py-6 md:py-12 bg-cover bg-center"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgb(0 0 0 / 70%), rgb(0 0 0 / 50%)), url('${bg}')`,
       }}
