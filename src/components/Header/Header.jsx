@@ -3,19 +3,20 @@ import FollowUs from "./FollowUs";
 import HeaderSlider from "./HeaderSlider";
 import Navigation from "./Navigation";
 import SearchBox from "./SearchBox";
+import cinema from "../../Assets/images/cinema.jpg";
 
 export default function Header() {
-  const [bg, setBg] = useState("/cinema.jpg");
+  const [bg, setBg] = useState(cinema);
 
   return (
     <header
-      className="py-6 md:py-12 bg-cover bg-center"
+      className="transition-all duration-500 bg-cover pb-8 bg-center md:py-8"
       style={{
-        backgroundImage: `linear-gradient(to bottom, rgb(0 0 0 / 70%), rgb(0 0 0 / 50%)), url('${bg}')`,
+        backgroundImage: `linear-gradient(to bottom, rgb(30 41 59 / 100%), rgb(30 41 59 / 50%), rgb(30 41 59 / 20%)), url('${bg}')`,
       }}
     >
-      <div className="container">
         <Navigation />
+      <div className="container">
         <SearchBox />
         <FollowUs />
         <HeaderSlider setBg={setBg} />

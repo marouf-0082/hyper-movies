@@ -3,9 +3,10 @@ export default function SearchBox() {
     <section className="mt-12 text-slate-300">
       <div className="relative">
         <input
+          pattern="[A-Za-z] {1,9}"
           type="text"
           placeholder="Search for a movie, TV Show or celebrity that you are looking for"
-          className="w-full bg-slate-600 text-2xl p-3 border-4 border-slate-900 rounded-md outline-none placeholder:text-slate-500 placeholder:text-base"
+          className="w-full bg-slate-600 text-2xl p-3 pr-13 border-4 border-slate-900 rounded-md outline-none placeholder:text-slate-500 placeholder:text-base"
         />
         <svg
           xmlns="http://www.w3.org/2000/svg"
