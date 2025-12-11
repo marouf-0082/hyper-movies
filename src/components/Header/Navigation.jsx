@@ -5,15 +5,15 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="flex items-center text-slate-300 bg-slate-900 p-4 md:container md:mx-auto md:bg-transparent md:py-4 md:px-6">
-        <div className="flex items-center">
+      <nav className="flex items-baseline text-slate-300 bg-slate-900 p-4 md:container md:mx-auto md:bg-transparent md:py-4 md:px-6">
+        <div className="flex items-baseline text-white">
           <h1 className="text-3xl mr-12">
-            Hyper<span className="text-rose-500">Movies</span>
+            Hyper<span className="text-yellow-500">Movies</span>
             <p className="text-xs text-center text-slate-500 font-light">
               Film Review
             </p>
           </h1>
-          <ul className="hidden md:flex text-sm lg:text-base gap-4 uppercase">
+          <ul className="hidden md:flex text-sm lg:text-base gap-4 uppercase tracking-tighter">
             <li>
               <a className="navLink" href="#">
                 Home
@@ -44,12 +44,12 @@ export default function Navigation() {
         <div className="hidden md:block text-sm lg:text-base ml-auto uppercase ">
           <ul className="flex gap-4">
             <li>
-              <a className="navLink" href="#">
+              <a className="text-white tracking-wider" href="#">
                 Login
               </a>
             </li>
             <li>
-              <a href="#" className="bg-rose-500 px-4 py-2 rounded-2xl">
+              <a href="#" className="btn primary font-bold tracking-wider">
                 Sign up
               </a>
             </li>
@@ -75,7 +75,7 @@ export default function Navigation() {
       </nav>
         <div className={`md:hidden bg-slate-900 text-center overflow-hidden transition-all duration-300 ${isOpenMenu ? "h-full py-4 border-t-2 border-slate-700" : "py-0 border-none"} uppercase text-slate-300`}
         style={{height: isOpenMenu ? 275 : 0}}>
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 tracking-tighter">
             <li>
               <a href="#">Home</a>
             </li>
@@ -93,9 +93,9 @@ export default function Navigation() {
             </li>
           </ul>
           <div className="border-t-2 border-slate-700 mt-4 pt-4">
-            <ul className="flex justify-center gap-4 items-center">
-              <li><a href="#">Login</a></li>
-              <li><a href="#" className="bg-rose-500 px-4 py-2 rounded-2xl">Sign up</a></li>
+            <ul className="flex justify-center gap-4 items-center tracking-wider">
+              <li><a href="#" className="text-white">Login</a></li>
+              <li><a href="#" className="bg-rose-500 px-4 py-2 rounded-2xl font-bold">Sign up</a></li>
             </ul>
           </div>
         </div>

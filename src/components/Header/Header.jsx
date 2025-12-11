@@ -12,7 +12,7 @@ export default function Header() {
     <header
       className="transition-all duration-500 bg-cover pb-8 bg-center md:py-8"
       style={{
-        backgroundImage: `linear-gradient(to bottom, rgb(30 41 59 / 100%), rgb(30 41 59 / 50%), rgb(30 41 59 / 20%)), url('${bg}')`,
+        backgroundImage: `linear-gradient(to bottom, rgb(30 41 59 / 100%), rgb(30 41 59 / 60%), rgb(30 41 59 / 30%)), url('${bg}')`,
       }}
     >
         <Navigation />
